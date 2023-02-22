@@ -21,7 +21,7 @@ export default defineConfig({
     },
     plugins: [
         vue(),
-         //配置自动导入element
+        //配置自动导入element
         createStyleImportPlugin({
             resolves: [ElementPlusResolve()],
             libs: [
