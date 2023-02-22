@@ -21,18 +21,55 @@
         :disabled-date="disabledDate"
         :size="size"
     />
+
+    <el-button type="danger" @click="myClick">调用eleplus的提示信息</el-button>
+
+    <el-button type="danger" @click="r.b.c++">count is: {{ r.b.c }}</el-button>
+    <el-button type="danger" @click="s.b.c++">count is: {{ s.b.c }}</el-button>
 </template>
 
 <script setup lang="ts">
+// 先引入文件
+import useCurrentInstance from '@/hooks/useCurrentInstance';
+import { ElNotification, ElMessage } from 'element-plus';
+
 import { useMouse } from '@vueuse/core';
-import { ref } from 'vue';
+import { ref, h, unref } from 'vue';
+
+let r = ref({ a: 1, b: { c: 2 } });
+// console.log(r.value);
+
+let s = unref(r);
+// console.log(s);
 
 const { x, y } = useMouse();
 
 const size = ref<'default' | 'large' | 'small'>('default');
 const value1 = ref('');
+
+const { globalProperties } = useCurrentInstance();
+
+console.log(globalProperties);
 const disabledDate = (time: Date) => {
     return time.getTime() > Date.now();
+};
+
+const myClick = () => {
+    // globalProperties.$message.success('123');
+    // globalProperties.$message({
+    //     type: 'success',
+    //     message: '1213',
+    //     // center: true,
+    // });
+    console.log(globalProperties);
+    ElNotification({
+        title: 'Title',
+        message: h('i', { style: 'color: teal' }, 'This is a reminder'),
+    });
+    ElMessage({
+        message: 'Congrats, this is a success message.',
+        type: 'success',
+    });
 };
 </script>
 

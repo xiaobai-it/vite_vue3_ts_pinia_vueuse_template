@@ -18,7 +18,10 @@ module.exports = {
         'plugin:prettier/recommended',
     ],
 
+    plugins: ['prettier'],
+
     rules: {
         // 自定义规则,也可以对许多eslint的内置规则，进行禁用
+        'prettier/prettier': 'error',
     },
 };
