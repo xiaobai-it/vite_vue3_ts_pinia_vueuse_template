@@ -1,14 +1,14 @@
 <template>
-    <div>{{ userStore.name }}</div>
-    <button @click="edit">点击修改status数据</button>
+	<div>{{ userStore.name }}</div>
+	<button @click="edit">点击修改status数据</button>
 </template>
 
 <script lang="ts" setup>
-import { useUserStore } from '@/store/user.js';
+import { useUserStore } from '@/store/user.js'
 
-const userStore = useUserStore();
+const userStore = useUserStore()
 
 const edit = () => {
-    console.log('被点击了');
-};
+	console.log('被点击了')
+}
 </script>

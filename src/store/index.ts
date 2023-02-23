@@ -1,6 +1,6 @@
-import { createPinia } from 'pinia';
+import { createPinia } from 'pinia'
 
-const store = createPinia();
-console.log('import.meta.env==>', import.meta.env);
+const store = createPinia()
+console.log('import.meta.env==>', import.meta.env)
 
-export default store;
+export default store
