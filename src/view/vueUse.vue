@@ -55,12 +55,13 @@ const disabledDate = (time: Date) => {
 }
 
 const myClick = () => {
-	// globalProperties.$message.success('123');
-	// globalProperties.$message({
-	//     type: 'success',
-	//     message: '1213',
-	//     // center: true,
-	// });
+	// 这里拿到的也是 element plus中的 ElMessage 事件，但是样式没有生效
+	globalProperties.$message.success('123')
+	globalProperties.$message({
+		type: 'success',
+		message: '1213',
+		// center: true,
+	})
 	console.log(globalProperties)
 	ElNotification({
 		title: 'Title',
