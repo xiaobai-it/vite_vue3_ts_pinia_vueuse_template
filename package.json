@@ -13,7 +13,7 @@
 		"prettier": "prettier --write .",
 		"commit:desc": "下面命令的解释：设置规范化的提交信息的",
 		"commit": "git-cz",
-		"precommit:desc": "下面命令的解释：commit之前执行lint-staged",
+		"precommit:desc": "下面命令的解释: commit之前执行lint-staged",
 		"precommit": "lint-staged",
 		"commit-all:desc": "下面命令的解释：npm run commit，d对Git暂存区的文件依次进行了ESLint检测、prettier、commitlint录入，这就完成了简单的自动化工作流",
 		"commit-all": "git add . && lint-staged && git-cz"
@@ -24,7 +24,7 @@
 		}
 	},
 	"lint-staged": {
-		"src/**/*.{js,ts,vue}": [
+		"src/**/*.{js,cjs,json,html,ts,vue}": [
 			"npm run eslint",
 			"npm run prettier"
 		]
