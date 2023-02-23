@@ -31,10 +31,10 @@
 <script setup lang="ts">
 // 先引入文件
 import useCurrentInstance from '@/hooks/useCurrentInstance'
-import { ElNotification, ElMessage } from 'element-plus'
+// import { ElNotification, ElMessage } from 'element-plus' // 不需要引入了，因为在components.d.ts文件，自动帮我们引入了
 
 import { useMouse } from '@vueuse/core'
-import { ref, h, unref } from 'vue'
+// import { ref, h, unref } from 'vue' // 不需要引入了，因为在auto-import.d.ts文件，自动帮我们引入了
 
 let r = ref({ a: 1, b: { c: 2 } })
 // console.log(r.value);

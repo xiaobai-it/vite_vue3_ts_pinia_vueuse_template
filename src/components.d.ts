@@ -9,9 +9,9 @@ declare module '@vue/runtime-core' {
 	export interface GlobalComponents {
 		ElButton: typeof import('element-plus/es')['ElButton']
 		ElDatePicker: typeof import('element-plus/es')['ElDatePicker']
-		HelloWorldOrigin: typeof import('./src/components/HelloWorldOrigin.vue')['default']
+		HelloWorldOrigin: typeof import('./components/HelloWorldOrigin.vue')['default']
 		RouterLink: typeof import('vue-router')['RouterLink']
 		RouterView: typeof import('vue-router')['RouterView']
-		UsePinia: typeof import('./src/components/usePinia.vue')['default']
+		UsePinia: typeof import('./components/usePinia.vue')['default']
 	}
 }
