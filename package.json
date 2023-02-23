@@ -26,7 +26,8 @@
 	"lint-staged": {
 		"src/**/*.{js,json,ts,vue}": [
 			"npm run eslint",
-			"npm run prettier"
+			"npm run prettier",
+			"git add ."
 		]
 	},
 	"eslintConfig": {
