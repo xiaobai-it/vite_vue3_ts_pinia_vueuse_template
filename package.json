@@ -15,7 +15,7 @@
 		"commit": "git-cz",
 		"precommit:desc": "下面命令的解释: commit之前执行lint-staged",
 		"precommit": "lint-staged",
-		"commit-all:desc": "下面命令的解释：npm run commit，d对Git暂存区的文件依次进行了ESLint检测、prettier、commitlint录入，这就完成了简单的自动化工作流",
+		"commit-all:desc": "下面命令的解释: npm run commit，d对Git暂存区的文件依次进行了ESLint检测、prettier、commitlint录入，这就完成了简单的自动化工作流",
 		"commit-all": "git add . && lint-staged && git-cz"
 	},
 	"config": {

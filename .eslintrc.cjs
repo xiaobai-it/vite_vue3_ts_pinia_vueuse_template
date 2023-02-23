@@ -26,6 +26,6 @@ module.exports = {
 	// 自定义规则,也可以对许多eslint的内置规则，进行禁用
 	rules: {
 		'prettier/prettier': 'error',
-		// semi: 0, // 行末分号，根据编码习惯选择添加，这里配置的不加分号
+		// semi: 0, // 行末分号，根据编码习惯选择添加，这里配置的是不加分号
 	},
 }

@@ -59,7 +59,7 @@ const myClick = () => {
 	globalProperties.$message.success('123')
 	globalProperties.$message({
 		type: 'success',
-		message: 'rtyrtyryrtyrtyrty',
+		message: '111111111',
 		// center: true,
 	})
 	console.log(globalProperties)
